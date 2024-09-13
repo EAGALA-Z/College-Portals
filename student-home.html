@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="student-home.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <button id="menuToggle">☰ Menu</button>
+        <nav id="sidebarMenu" class="closed">
+            <ul>
+                <li><a href="#attendance">Attendance Results</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#clubs-sports">Clubs & Sports</a></li>
+                <li><a href="#helper">Helper</a></li>
+                <li><a href="Home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="content-box" id="attendance">
+            <h2>Attendance Results</h2>
+            <p>Details about attendance.</p>
+        </div>
+        <div class="content-box" id="assignments">
+            <h2>Assignments</h2>
+            <p>Details about assignments.</p>
+        </div>
+        <div class="content-box" id="clubs-sports">
+            <h2>Clubs & Sports</h2>
+            <p>Details about clubs and sports.</p>
+        </div>
+        <div class="content-box" id="helper">
+            <h2>Helper</h2>
+            <p>Details about helpers and resources.</p>
+        </div>
+        <div class="content-box" id="logout">
+            <h2>Logout</h2>
+            <p>Details about logging out.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('sidebarMenu').classList.toggle('closed');
+        });
+    </script>
+</body>
+</html>
+
